@@ -1,92 +1,112 @@
+// hour now > 18 correct      hourNow < 24;
+// logical operators 
+var hourNow = prompt('what is the time');
+console.log(hourNow)
+// mohammad
+var message= '';
+console.log(message);
+if(hourNow >= 18  && hourNow <= 24){ //f
+    message = 'Good Evening';
+}else if(hourNow >= 12 && hourNow < 18){
+    message = 'Good Afternoon';
+}else if (hourNow >= 0 && hourNow< 12){
+    message = 'Good morning';
+}else{
+    alert('Welcome ')
+}
+document.write('<h2>' + message + '</h2>');
 
+// i want to log out 10 numbers
+// console.log(1);
+// console.log(2);
+// console.log(3);
+// console.log(4);
 
-// var userInput = prompt('Whats your name?');
-// console.log(userInput);
+// our problem we want to console.log() 10 numbers using some sort of loops
 
-// alert('Hello ' + userInput);
-
-// console.log(123 + 345);
-
-// console.log('123' + 345);
-
-// console.log('abc' + 'de' );
-
-// var userName = 'sara';
-// var userInput = 'anything';
-// console.log(userName , userInput);
-// var pi = 3.14 + 10;
-
-// var x = 5;
-// // < > != <= >=
-// console.log(pi * x);
-
-// console.log(pi);
-// var y =20;
-// var z ='20';
-// console.log( y == z );
-// // console.log(x >= pi);
-// // console.log(x < pi);
-
-// var numberOne = 10;
-// var numberTwo = 10;
-// // = assigning value 
-// // == checking 2 values regarding the datatype
-// // === stictly equl 
-// var newUser = 'mohammad al azzam';
-// // alert('Hi ' + newUser);
-// console.log(newUser);
-
-
-// // var mohammad = 'mohammad al khazali';
-// // console.log(mohammad);
-
-// var mohammad;
-
-// mohammad = 5;
-// console.log(mohammad)
-// // reassign
-// mohammad = 10;
-
-// mohammad = 'ahmad';
-// console.log(mohammad)
-
-// // alert('this wont be saved')
-
-
-//conditions 
-
-// if statement
-// var x = 15; 
-// var y = 10;
-
-// if(x<y){ // either true or false
-//     alert('Hello ahmad');
-// }else{
-//     alert('We  are here in the else')
+// i++ => i = i + 1;
+// i-- => i = i - 1;
+// for(var i =0 ; i < 10 ; i++){
+//     console.log(i)
 // }
 
-// var user = prompt('what is your age?');
-// // people less than 18 to be alerted with hello teenger
-// if(user<18){
-//     alert('Hello Teenger');
-// }else{
-//     alert('Hello Adults');
-//     // as genral case 
-// };
-// people greater than 18 to be alerted with hello adults 
+// for(var i = 30; i >= 10 ; i--){
+//     console.log(i);
+// }
 
-// if we have more than one condition
-// 24
-var hourNow = prompt('what is the time');
-if(hourNow > 18){
-    document.write('<h3>'+'Good Evening' + '</h3>');
-}else if(hourNow > 12){
-    document.write('Good afternoon');
-}else if (hourNow >= 0 ){
-    document.write('Good morning');
-}else{
-    alert('Welcome!');
+// console.log('this is the i out of the for loop', i);
+
+
+// while(condition){  T  --  F
+ // code block 
+//}
+// for(var i = 10; i >10; i--){
+//     console.log(i)
+// }
+
+// // the main difference between for and while the structure 
+// // of each loop and the second is when i dont know how many time
+// // im going to loop
+// while(condition){
+
+//     // code block
+// }
+
+
+// we need to ask the user to choose 
+// if he wants dounts or cookies 
+// cake 
+
+
+// we want the user only be able to pick one of these(dounts, cookies);
+// i want to strict the user to enter one of these 
+// if the user ordered an thing else than dounts or cookies 
+// we want to keep asking him the question
+// falafel
+// cookies
+// while(!(userOrder =='dounts' || userOrder =='cookies')){
+//             // F                      // T
+//                             // T
+//                             // !T - > False
+//     userOrder = prompt('please enter the correct item')
+// }
+
+// falfel , shawerma , homs , mansaf
+var userOrder = prompt('what would you like to order dounts or cookies','place your order');
+while(userOrder !=='dounts' && userOrder !=='cookies'){
+        // T               &&        T
+                            //T
+    userOrder = prompt('please enter the correct item')
+
+}
+// falafel
+// cookies
+// console.log(userOrder);
+
+// i want to ask the user how many cookies or dounts he wants 
+// and based on the number i will provide them with an images
+// cookies
+var userInputs = prompt('how many cookeis or dounts  do you want?')
+// 5 
+var image=''; 
+
+// docuemnt.write()
+// 3
+for(var i = 0; i < userInputs; i++){
+    if(userOrder =='cookies'){
+        image = image + '<img src="https://www.kainoasgrill.com/wp-content/uploads/2019/03/Cookies-400x300.jpg">'
+        console.log(image)
+        
+    }else if(userOrder =='dounts'){
+        image = image +'<img src="https://thebakingexplorer.com/wp-content/uploads/2020/05/NDpin1-200x300.jpg">'
+  
+    }
+
 }
 
-// another way to show an output
-// document.write("Welcome People");
+document.write(image)
+
+
+
+
+
