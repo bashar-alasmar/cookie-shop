@@ -50,3 +50,59 @@ document.write(image)
 
 greeting();
 orderingCookie();
+
+
+/*
+// using document.write printout the odd numbers between(1-100) each number in one line
+
+
+// for(var i = 1; i <= 100; i++){
+//     if(i % 2 !== 0){
+//        document.write(i);
+//        document.write("<br>")
+//     }
+// }
+
+
+// function greeting(message){
+//     alert(message);
+// }
+// greeting('welcome to my webPage')
+
+
+
+
+// var ahmadsGrade = 300;
+// var mohammadsGrade = 280;
+// var samisGrade = 400;
+// var omarsGrade = 600;
+// var khaledsGrade = 700;
+
+// var ahmadAvg = ahmadsGrade/3;
+// console.log(ahmadAvg);
+
+// var mohammadsAvg = mohammadsGrade/3;
+// console.log(mohammadsAvg);
+
+// var samisAvg = samisGrade/3;
+// console.log(samisAvg)
+
+// var omarsAvg = omarsGrade/3
+// console.log(omarsAvg)
+
+// var khaledsAvg = khaledsGrade/3;
+// console.log(khaledsAvg);
+
+
+
+// function gradeCalc(name,grade){
+//     var avg = grade/3;
+//     console.log(name +avg);
+// }
+
+// gradeCalc('ahmad :',ahmadsGrade)
+// gradeCalc('mohammad : ',mohammadsGrade)
+// gradeCalc('sami : ',samisGrade)
+
+
+*/
