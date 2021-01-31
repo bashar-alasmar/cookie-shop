@@ -1,0 +1,55 @@
+/*
+1- i want to change the background color of my header
+i also want my h1 to be in the middle of the page (centered)
+2- i want to remove the list style
+3- we added inline elements and also a margin
+4- i want to remove the underline from the link
+give it a color 
+*/
+* {
+    margin:0;
+}
+
+header{
+    background-color: rgba(32, 200, 154,0.5)
+}
+
+h1{
+    text-align: center;
+}
+
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline;
+    margin:20px;     
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:#eeeeee;
+
+}
+h2{
+    margin:20px 0 20px 60px;
+}
+main section ol li{
+    color: hsl(90, 50%, 40%);
+    
+}
+
+#html-image{
+    width: 40%;
+    margin:20px;
+    float:right;
+}
+.paragraph{
+    background-color: lightblue;
+    margin: 10px;
+    
+}
+article{
+    font-style: oblique;
+}
+
